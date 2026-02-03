@@ -1,0 +1,18 @@
+[project]
+name = "commavq"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "tqdm",
+    "datasets==4.0.0",
+    "torch==2.2.2",
+    "numpy<2",
+    "opencv-python",
+    "einops",
+    "matplotlib>=3.10.8",
+]
+
+[dependency-groups]
+dev = ["ipykernel>=7.1.0"]
