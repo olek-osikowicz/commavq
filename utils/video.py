@@ -8,7 +8,7 @@ CY = 47.6
 
 def write_video(frames_rgb, out, fps=20):
   size = frames_rgb[0].shape[:2][::-1]
-  video = cv2.VideoWriter(out, cv2.VideoWriter_fourcc(*'avc1'), fps, size)
+  video = cv2.VideoWriter(out, cv2.VideoWriter_fourcc(*'mp4v'), fps, size)
   for frame in frames_rgb:
     video.write(frame[...,::-1])
   video.release()
